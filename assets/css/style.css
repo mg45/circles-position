@@ -2,15 +2,20 @@ body {
     margin: 0 0;
 }
 
+/* ------------------------------
+   1st Circles
+---------------------------------*/
+
 section {
     padding: 100px;
     background-color: #E3516E;
     width: 200px;
     height: 200px;
-    margin: 10% auto;
+    margin: 2% auto;
 }
 
 /* ---------- Color ----------*/
+
 .green {
     background-color: #51B5A9;
 }
@@ -23,12 +28,13 @@ section {
     background-color: #F7F3D7;
 }
 
-section > div {
+section>div {
     width: 100px;
     height: 100px;
 }
 
-/* ---------- Circle cutous ----------*/
+/* ---------- Circle cutous 01 ----------*/
+
 .top-left-circle {
     border-top-left-radius: 100%;
 }
@@ -44,4 +50,64 @@ section > div {
     border-bottom-left-radius: 100%;
     position: relative;
     top: -100px;
+}
+
+/* ------------------------------
+   2nd Circles
+---------------------------------*/
+
+section:nth-of-type(2) {
+    background-color: #191210;
+}
+
+.full-circle-cutout {
+    top: 15px;
+    left: 15px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #ECA03D;
+    border-radius: 50%;
+}
+
+.full-circle-border {
+    position: relative;
+    bottom: 110px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: #191210;
+    border-radius: 50%;
+}
+
+.full-circle-red {
+    position: relative;
+    bottom: 185px;
+    left: 65px;
+    width: 50px;
+    height: 50px;
+    background-color: #84271C;
+    border-radius: 50%;
+}
+
+.half-circle-border-right {
+    position: relative;
+    bottom: 260px;
+    left: 140px;
+    width: 50px;
+    height: 25px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    border: 25px solid #ECA03D;
+    border-bottom: 0;
+}
+
+.half-circle-border-left {
+    position: relative;
+    bottom: 260px;
+    left: -60px;
+    width: 50px;
+    height: 25px;
+    border-radius: 0 0 50% 50% / 0 0 100% 100% ;
+    border: 25px solid #ECA03D;
+    border-top: 0;
 }
