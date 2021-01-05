@@ -1,0 +1,47 @@
+body {
+    margin: 0 0;
+}
+
+section {
+    padding: 100px;
+    background-color: #E3516E;
+    width: 200px;
+    height: 200px;
+    margin: 10% auto;
+}
+
+/* ---------- Color ----------*/
+.green {
+    background-color: #51B5A9;
+}
+
+.yellow {
+    background-color: #FADE8B;
+}
+
+.beige {
+    background-color: #F7F3D7;
+}
+
+section > div {
+    width: 100px;
+    height: 100px;
+}
+
+/* ---------- Circle cutous ----------*/
+.top-left-circle {
+    border-top-left-radius: 100%;
+}
+
+.top-right-circle {
+    border-top-right-radius: 100%;
+    position: relative;
+    top: -100px;
+    left: 100px;
+}
+
+.bottom-left-circle {
+    border-bottom-left-radius: 100%;
+    position: relative;
+    top: -100px;
+}
